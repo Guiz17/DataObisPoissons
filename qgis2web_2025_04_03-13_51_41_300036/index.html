@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
+
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="layers/ZoneSecteurs_InterventionPIEI_V2_1.js"></script><script src="layers/DataObisPoissonsAiguillat_commun_2.js"></script><script src="layers/DataObisPoissonsBar_Ray_3.js"></script><script src="layers/DataObisPoissonsBaudroisdAmrique_4.js"></script><script src="layers/DataObisPoissonsCapelan_5.js"></script><script src="layers/DataObisPoissonsCapucette_6.js"></script><script src="layers/DataObisPoissonsChaboisseau_arctique_7.js"></script><script src="layers/DataObisPoissonsChaboisseau_pines_courtes_8.js"></script><script src="layers/DataObisPoissonsChaboisseaux_9.js"></script><script src="layers/DataObisPoissonsChoquemort_10.js"></script><script src="layers/DataObisPoissonsperlan_arc_en_ciel_11.js"></script><script src="layers/DataObisPoissonspinoches_12.js"></script><script src="layers/DataObisPoissonspinoches_trois_pines_13.js"></script><script src="layers/DataObisPoissonsFltan_atlantique_14.js"></script><script src="layers/DataObisPoissonsGaspareau_15.js"></script><script src="layers/DataObisPoissonsHareng_de_atlantique_16.js"></script><script src="layers/DataObisPoissonsHmitriptre_atlantique_17.js"></script><script src="layers/DataObisPoissonsLanons_18.js"></script><script src="layers/DataObisPoissonsLanons_du_nord_19.js"></script><script src="layers/DataObisPoissonsLimande__queue_jaune_20.js"></script><script src="layers/DataObisPoissonsLompe_21.js"></script><script src="layers/DataObisPoissonsLoquette_amrique_22.js"></script><script src="layers/DataObisPoissonsLoup_atlantique_23.js"></script><script src="layers/DataObisPoissonsLoup_tchet_24.js"></script><script src="layers/DataObisPoissonsMaquereau_bleu_25.js"></script><script src="layers/DataObisPoissonsMerlu_argent_26.js"></script><script src="layers/DataObisPoissonsMerluche_cureuil_27.js"></script><script src="layers/DataObisPoissonsMorue_du_Pacifique_28.js"></script><script src="layers/DataObisPoissonsMorue_franche_29.js"></script><script src="layers/DataObisPoissonsMorue_Polaire_30.js"></script><script src="layers/DataObisPoissonsMorues_31.js"></script><script src="layers/DataObisPoissonsPlie_canadienne_32.js"></script><script src="layers/DataObisPoissonsPlie_grise_33.js"></script><script src="layers/DataObisPoissonsPlie_rouge_34.js"></script><script src="layers/DataObisPoissonsPoissons_plats_35.js"></script><script src="layers/DataObisPoissonsRaie_pineuse_36.js"></script><script src="layers/DataObisPoissonsSebastes_37.js"></script><script src="layers/DataObisPoissonsSyngnathe_brun_38.js"></script><script src="layers/DataObisPoissonsTanche_tautogue_39.js"></script><script src="layers/DataObisPoissonsTurbot_de_sable_40.js"></script>
+        <script src="styles/ZoneSecteurs_InterventionPIEI_V2_1_style.js"></script><script src="styles/DataObisPoissonsAiguillat_commun_2_style.js"></script><script src="styles/DataObisPoissonsBar_Ray_3_style.js"></script><script src="styles/DataObisPoissonsBaudroisdAmrique_4_style.js"></script><script src="styles/DataObisPoissonsCapelan_5_style.js"></script><script src="styles/DataObisPoissonsCapucette_6_style.js"></script><script src="styles/DataObisPoissonsChaboisseau_arctique_7_style.js"></script><script src="styles/DataObisPoissonsChaboisseau_pines_courtes_8_style.js"></script><script src="styles/DataObisPoissonsChaboisseaux_9_style.js"></script><script src="styles/DataObisPoissonsChoquemort_10_style.js"></script><script src="styles/DataObisPoissonsperlan_arc_en_ciel_11_style.js"></script><script src="styles/DataObisPoissonspinoches_12_style.js"></script><script src="styles/DataObisPoissonspinoches_trois_pines_13_style.js"></script><script src="styles/DataObisPoissonsFltan_atlantique_14_style.js"></script><script src="styles/DataObisPoissonsGaspareau_15_style.js"></script><script src="styles/DataObisPoissonsHareng_de_atlantique_16_style.js"></script><script src="styles/DataObisPoissonsHmitriptre_atlantique_17_style.js"></script><script src="styles/DataObisPoissonsLanons_18_style.js"></script><script src="styles/DataObisPoissonsLanons_du_nord_19_style.js"></script><script src="styles/DataObisPoissonsLimande__queue_jaune_20_style.js"></script><script src="styles/DataObisPoissonsLompe_21_style.js"></script><script src="styles/DataObisPoissonsLoquette_amrique_22_style.js"></script><script src="styles/DataObisPoissonsLoup_atlantique_23_style.js"></script><script src="styles/DataObisPoissonsLoup_tchet_24_style.js"></script><script src="styles/DataObisPoissonsMaquereau_bleu_25_style.js"></script><script src="styles/DataObisPoissonsMerlu_argent_26_style.js"></script><script src="styles/DataObisPoissonsMerluche_cureuil_27_style.js"></script><script src="styles/DataObisPoissonsMorue_du_Pacifique_28_style.js"></script><script src="styles/DataObisPoissonsMorue_franche_29_style.js"></script><script src="styles/DataObisPoissonsMorue_Polaire_30_style.js"></script><script src="styles/DataObisPoissonsMorues_31_style.js"></script><script src="styles/DataObisPoissonsPlie_canadienne_32_style.js"></script><script src="styles/DataObisPoissonsPlie_grise_33_style.js"></script><script src="styles/DataObisPoissonsPlie_rouge_34_style.js"></script><script src="styles/DataObisPoissonsPoissons_plats_35_style.js"></script><script src="styles/DataObisPoissonsRaie_pineuse_36_style.js"></script><script src="styles/DataObisPoissonsSebastes_37_style.js"></script><script src="styles/DataObisPoissonsSyngnathe_brun_38_style.js"></script><script src="styles/DataObisPoissonsTanche_tautogue_39_style.js"></script><script src="styles/DataObisPoissonsTurbot_de_sable_40_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
+</html>
